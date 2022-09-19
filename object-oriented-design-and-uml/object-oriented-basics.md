@@ -79,6 +79,8 @@ class Product:
 
     def __init__(self):
         self.__maxprice = 900
+        #the date maxprice is private here, no one outside of Product class can access it (not even child class)
+        #you can make a data private by adding two underscore in front of it (__)
 
     def sell(self):
         print("Selling Price: {}".format(self.__maxprice))
